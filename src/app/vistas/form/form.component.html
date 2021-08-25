@@ -1,0 +1,39 @@
+
+
+
+<div id="container">
+    <h1>&bull;CREAR TARIFA &bull;</h1>
+    <h1>&bull;--COTIZADOR ENVIOS-- &bull;</h1>
+    <div class="icon_wrapper">
+      
+    </div>
+    <form (ngSubmit)="createTarifa()">
+      
+
+        <input type="text" id="id_Cliente" class="fadeIn second" name="id_Cliente" [(ngModel)]="tfnueva.id_Cliente" placeholder="id_Cliente"   required>
+
+
+        <input type="text" id="id_PaisDestino" class="fadeIn second" name="id_PaisDestino" [(ngModel)]="tfnueva.id_PaisDestino" placeholder="id_PaisDestino"   required>
+
+        <input type="text" id="peso" class="fadeIn second" name="peso" [(ngModel)]="tfnueva.peso" placeholder="peso"   required>
+
+        <input type="text" id="ancho" class="fadeIn second" name="ancho" [(ngModel)]="tfnueva.ancho" placeholder="ancho"   required>
+
+        <input type="text" id="alto" class="fadeIn second" name="alto" [(ngModel)]="tfnueva.alto" placeholder="alto"   required>
+
+        <input type="text" id="largo" class="fadeIn second" name="largo" [(ngModel)]="tfnueva.largo" placeholder="Largo"   required>
+
+        <input type="text" id="nombrePaisOrigen" class="fadeIn second" name="nombrePaisOrigen" [(ngModel)]="tfnueva.nombrePaisOrigen" placeholder="Pais Origen"   required>
+
+        <input type="text" id="nombreRegion" class="fadeIn second" name="nombreRegion" [(ngModel)]="tfnueva.nombreRegion" placeholder="nombre Region"   required>
+
+        <input type="text" id="descuentoCliente" class="fadeIn second" name="descuentoCliente" [(ngModel)]="tfnueva.descuentoCliente" placeholder="Descuento Cliente"   required>
+      
+        <input type="text" id="montoTarifa"  name="montoTarifa" [(ngModel)]="tfnueva.montoTarifa" placeholder="Monto Tarifa"   required>
+      
+      <div class="submit">
+        <input type="submit" value="AGUARDAR TARIFA"    id="form_button" />
+      </div>
+    </form>
+    </div>
+

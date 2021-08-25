@@ -1,0 +1,48 @@
+<!-- -->
+<div class="container">
+  <h1>TARIFAS ALMACENADAS</h1>
+  <button type="button" class="btn btn-warning"  [routerLink]="['TarifaNueva']">Generar Nueva Tarifa</button>
+
+  <table class="table">
+    
+    <thead>
+      <tr>
+        <th scope="col">Id_Tarifa</th>
+        <th scope="col">Id_Cliente</th>
+        <th scope="col">Peso</th>
+        <th scope="col">Ancho</th>
+        <th scope="col">Alto</th>
+        <th scope="col">Largo</th>
+        <th scope="col">PaisOrigen</th>
+        <th scope="col">Region</th>
+        <th scope="col">Descuento</th>
+        <th scope="col">Monto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarifa of tf">
+        <th scope="row">{{ tarifa.id_tarifa }}</th>
+        <td>{{ tarifa.id_Cliente }}</td>
+        <td>{{ tarifa.peso }}</td>
+        <td>{{ tarifa.ancho }}</td>
+        <td>{{ tarifa.alto }}</td>
+        <td>{{ tarifa.largo }}</td>
+        <td>{{ tarifa.nombrePaisOrigen }}</td>
+        <td>{{ tarifa.nombreRegion }}</td>
+        <td>{{ tarifa.descuentoCliente }}</td>
+        <td>{{ tarifa.montoTarifa }}</td>
+      </tr>
+    </tbody>
+    <br><br>
+    <br><br>
+    <br><br>
+  </table>
+</div>
+
+<!-- -->
+
+
+ <!-- <app-usuarios></app-usuarios>-->
+
+<!--<app-paises></app-paises>-->
+

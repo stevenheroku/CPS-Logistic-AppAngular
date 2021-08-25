@@ -1,0 +1,115 @@
+<!-- -->
+<div class="container">
+  <h1>CLIENTES ALMACENADOS</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">CodigoCliente</th>
+        <th scope="col">Nombres</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">NivelCliente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of usuario">
+        <th scope="row">{{ user.codigoCliente }}</th>
+        <td>{{ user.nombres }}</td>
+        <td>{{ user.apellidos }}</td>
+        <td>{{ user.telefono }}</td>
+        <td>{{ user.direccion }}</td>
+        <td>{{ user.nivelCliente }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-warning"  [routerLink]="['']">REGRESAR</button>
+</div>
+<br><br>
+<!-- 
+  <form>
+    <h1>COTIZADOR DE ENVÍOS</h1>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Id_Tarifa</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Peso</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Ancho</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Alto</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Largo</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">NombrePaisOrigen</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">NombreRegion</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="submit"  class="btn btn-primary">Delete</button>
+  </form>
+
+  <div id="container">
+    <h1>&bull;Tarifas-CPS &bull;</h1>
+    <div class="underline">
+    </div>
+    <div class="icon_wrapper">
+      
+    </div>
+    <form action="#" method="post" id="contact_form">
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Id_Tarifa" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Peso" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Alto" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Ancho" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Largo" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Nombre Pais Origen" name="telephone" id="telephone_input" required>
+      </div>
+
+      <div class="subject">
+        <label for="subject"></label>
+        <select placeholder="Subject line" name="subject" id="subject_input" required>
+          <option disabled hidden selected>Nombre Region</option>
+          <option>Norte América</option>
+          <option>Asia</option>
+          <option>África</option>
+          <option>Suramérica</option>
+          <option>Centro América</option>
+          <option>África</option>
+        </select>
+      </div>
+      <div class="submit">
+        <input type="submit" value="AGUARDAR TARIFA" id="form_button" />
+      </div>
+    </form>
+  </div>--><!-- // End #container -->
